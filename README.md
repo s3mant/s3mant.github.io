@@ -1,2 +1,2 @@
-# SemantCodes.github.io
+# S3mant.github.io
 My website
