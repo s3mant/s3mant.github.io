@@ -59,14 +59,13 @@
       }
     </style>
     <iframe
-      src="/public/epic.mp3?autoplay=1&loop=1&autopause=0"
+      src="/public/sounds/silence.mp3"
       allow="autoplay"
+      id="audio"
       style="display: none"
-      id="iframeAudio"
-    >
-    </iframe>
+    ></iframe>
     <audio autoplay loop id="playAudio">
-      <source src="/public/epic.mp3" type="audio/mp3" />
+      <source src="/public/sounds/epic.mp3" type="audio/mp3" />
     </audio>
     <p>
       We're no strangers to love You know the rules and so do I A full
@@ -118,10 +117,5 @@
       Never gonna let you down Never gonna run around and desert you Never gonna
       make you cry Never gonna say goodbye
     </p>
-    <script>
-      /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor)
-        ? document.getElementById("playAudio").remove()
-        : document.getElementById("iframeAudio").remove();
-    </script>
   </body>
 </html>
