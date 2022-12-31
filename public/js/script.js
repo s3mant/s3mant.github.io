@@ -15,7 +15,9 @@ delay, handmove;
 accounts[loc]
 ? location.replace(accounts[loc.replace(".html")]): location.replace("https://www.semant.is-a.dev/" + loc);
 
-document.onmousemove = document.ontouchmove = function () {
+document.addEventListener("mousemove", wiggle)
+document.addEventListener("touchmove", wiggle)
+ function wiggle () {
     if (delay) return;
     delay = true;
     setTimeout(() => {
