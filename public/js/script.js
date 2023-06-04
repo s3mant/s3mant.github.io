@@ -11,4 +11,4 @@ document.body.appendChild(
 let loc = location.href.split("/").slice(3).join("/");
 accounts[loc]
   ? location.replace(accounts[loc.replace(".html")])
-  : location.replace("https://www.semant.is-a.dev/" + loc);
+  : location.replace("https://home.semant.is-a.dev/" + loc);
